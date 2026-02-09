@@ -1,0 +1,19 @@
+[package]
+name = "suricata-ndpi-plugin"
+version = "0.1.0-alpha.1"
+edition = "2021"
+license = "LGPL-3.0-only"
+build = "build.rs"
+
+[workspace]
+members = [".", "ndpi-sys"]
+
+[lib]
+name = "ndpi"
+crate-type = ["cdylib"]
+
+[dependencies]
+ndpi-sys = { path = "ndpi-sys" }
+
+[build-dependencies]
+cc = "1.2"
