@@ -1,0 +1,3 @@
+[submodule "ndpi-sys/vendor/nDPI"]
+	path = ndpi-sys/vendor/nDPI
+	url = https://github.com/ntop/nDPI.git
